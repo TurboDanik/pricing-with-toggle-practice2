@@ -79,7 +79,7 @@
     var prof = document.getElementById('prof-price');
     var master = document.getElementById('master-price');
 
-    if (document.getElementById('checkbox').checked) {
+    if (!document.getElementById('checkbox').checked) {
       basic.innerHTML = '&dollar;199.99';
       prof.innerHTML = '&dollar;249.99';
       master.innerHTML = '&dollar;399.99';
