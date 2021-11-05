@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <link rel="stylesheet" href="style.css">
+  
+  <title>Frontend Mentor | [Ayana & Danial]</title>
+</head>
+<body>
+  <main>
+    <section id="header">
+      <h3>Our Pricing</h3>
+      <div>
+        <p>Annually</p>
+        <label class="toggle">
+          <input id="checkbox" type="checkbox" name="toggle" onchange="newPrice()">
+          <span class="slider"></span> 
+        </label>
+        <p>Monthly</p>
+      </div>
+    </section>
+
+    <section id="cards">
+      <div id="basic" class="card">
+        <h4>Basic</h4>
+        <p id="basic-price">&dollar;19.99</p>
+
+        <p>500 GB Storage</p>
+        
+        <p>2 Users Allowed</p>
+        
+        <p>Send up to 3 GB</p>
+        
+        <input type="button" name="" value="Learn More">
+      </div>
+
+      <div id="professional" class="card">
+        <h4>Professional</h4>
+        <p id="prof-price">&dollar;24.99</p>
+        
+        <p>1 TB Storage</p>
+        
+        <p>5 Users Allowed</p>
+        
+        <p>Send up to 10 GB</p>
+        
+        <input type="button" name="" value="Learn More">
+      </div>
+
+      <div id="master" class="card">
+        <h4>Master</h4>
+        <p id="master-price">&dollar;39.99</p>
+        
+        <p>2 TB Storage</p>
+        
+        <p>10 Users Allowed</p>
+        
+        <p>Send up to 20 GB</p>
+        
+        <input type="button" name="" value="Learn More">
+      </div>
+    </section>
+  </main>
+  
+  <footer>
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Daniyaruly Danial & Joldasbek Ayana</a>.
+    </p>
+  </footer>
+
+  <script>
+  function newPrice() {
+    var basic = document.getElementById('basic-price');
+    var prof = document.getElementById('prof-price');
+    var master = document.getElementById('master-price');
+
+    if (document.getElementById('checkbox').checked) {
+      basic.innerHTML = '&dollar;199.99';
+      prof.innerHTML = '&dollar;249.99';
+      master.innerHTML = '&dollar;399.99';
+    }
+    else {
+      basic.innerHTML = '&dollar;19.99';
+      prof.innerHTML = '&dollar;24.99';
+      master.innerHTML = '&dollar;39.99';
+    }
+  }
+  </script>
+</body>
+</html>
