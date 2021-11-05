@@ -85,6 +85,5 @@ function newPrice() {
 
 ## Authors
 
-- Website - [Add your name here](https://www.your-site.com)
 - Frontend Mentor - [@ZZZAyana](https://www.frontendmentor.io/profile/ZZZAyana)
 - Frontend Mentor - [@TurboDanik](https://www.frontendmentor.io/profile/TurboDanik)
